@@ -32,19 +32,19 @@ Below are demos of commands and explanations of what they are doing.
   * If spotify-this-song is inputted without a song name, then it defaults to a song called 'The Sign'. It's doing this by taking in the command through a switch statement, running a function which uses the spotify api to request information, and then logs/prints the artist,song name,preview link, and album. The function  can take a song name inputted by the user, and do the same thing. 
 
    * `node liri.js movie-this '<movie name here>'`will output the following information to your terminal/bash window:
-   
+ . 
     ![Movie img](screenshots/movie-this.png)
 
   * If movie-this is inputted without a movie name, then it defaults to a movie called 'Mr.Nobody'. It's doing this by taking in the command through a switch statement, running a function which uses the omdb api to request information, and then logs/prints the requested data. The function can take a movie name inputted by the user, and do the same thing. 
 
 
 
-   *  `node liri.js do-what-it-says`will take the text inside of random.txt and then use it to call one of LIRI's commands with fs.
-
+   *  `node liri.js do-what-it-says` will take the text inside of random.txt and then use it to call one of LIRI's commands with fs.
+.
     ![doit img](screenshots/do-what-it-says.png)
 
    This will run `spotify-this-song`(function) for "I Want it That Way," as follows the text in `random.txt`.
    
    * Additionally, every output will be logged into the log-txt file (red), and there is validation for incorrect commands (yellow)
-   
+ .  
    ![log img](screenshots/log.png)
