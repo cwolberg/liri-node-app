@@ -23,19 +23,19 @@ Below are demos of commands and explanations of what they are doing.
 
 ![Concert img](screenshots/concert-this.png)
  
- * In red, is "node liri <command> <query>" , which is using nodejs to run the liri.js file. Then, the command is saved as a variable with process.argv[2], and the query is saved with process.argv[3] as variables. The command variable is run through a list of switch cases, and when it is validated by a 'concert-this', it runs a function to use axios to request bandsintown api data, gets keys through the keys.js file (is successful, prints 'this is loaded', in yellow, which all commands do), and then logs/displays a venue,location,date (formatted as "MM/DD/YYYY"), in green.
+  In red, is "node liri <command> <query>" , which is using nodejs to run the liri.js file. Then, the command is saved as a variable with process.argv[2], and the query is saved with process.argv[3] as variables. The command variable is run through a list of switch cases, and when it is validated by a 'concert-this', it runs a function to use axios to request bandsintown api data, gets keys through the keys.js file (is successful, prints 'this is loaded', in yellow, which all commands do), and then logs/displays a venue,location,date (formatted as "MM/DD/YYYY"), in green.
   
-   *   `node liri.js spotify-this-song '<song name here>'`will show the following information about the song in your terminal/bash window
+   *  `node liri.js spotify-this-song '<song name here>'`will show the following information about the song in your terminal/bash window
   
   ![Song img](screenshots/spotify-this-song.png)
   
-  * If spotify-this-song is inputted without a song name, then it defaults to a song called 'The Sign'. It's doing this by taking in the command through a switch statement, running a function which uses the spotify api to request information, and then logs/prints the artist,song name,preview link, and album. The function  can take a song name inputted by the user, and do the same thing. 
+   If spotify-this-song is inputted without a song name, then it defaults to a song called 'The Sign'. It's doing this by taking in the command through a switch statement, running a function which uses the spotify api to request information, and then logs/prints the artist,song name,preview link, and album. The function  can take a song name inputted by the user, and do the same thing. 
 
    * `node liri.js movie-this '<movie name here>'`will output the following information to your terminal/bash window:
  . 
     ![Movie img](screenshots/movie-this.png)
 
-  * If movie-this is inputted without a movie name, then it defaults to a movie called 'Mr.Nobody'. It's doing this by taking in the command through a switch statement, running a function which uses the omdb api to request information, and then logs/prints the requested data. The function can take a movie name inputted by the user, and do the same thing. 
+   If movie-this is inputted without a movie name, then it defaults to a movie called 'Mr.Nobody'. It's doing this by taking in the command through a switch statement, running a function which uses the omdb api to request information, and then logs/prints the requested data. The function can take a movie name inputted by the user, and do the same thing. 
 
 
 
