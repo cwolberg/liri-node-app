@@ -20,4 +20,4 @@ Below are demos of commands and explanations of what they are doing.
 
 *  `node liri.js concert-this <artist/band name here>` will search the Bands in Town Artist Events API.
 
-![Concert img](screenshots/concert.png)
+![Concert img](screenshots/concert-this.png)
